@@ -1,0 +1,25 @@
+<div>
+  <h2>
+    im <a href="https://twitter.com/satsukitv"><img alt="@satsukitv" src="/assets/img/cooltext.gif"></a> and im a
+    <ul>
+      <li>Twitter Account Haver</li>
+      <li>General Anarchy Enjoyer</li>
+    </ul>
+  </h2>
+  <h3>
+    <br />
+    want to know more?
+  </h3>
+  <h4>
+    <br />
+    cool...
+    <span class="right">thats legit</span>
+  </h4>
+  <div class="card-columns">
+    <ng-container *ngFor="let post of blogData">
+      <div class="card">
+        <app-blog-post [post]="post"></app-blog-post>
+      </div>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/reboot";
+h2 {
+  text-align: center;
+  margin: 0 20px;
+  @include media-breakpoint-up(sm) {
+    width: 500px;
+    margin: 0 auto;
+  }
+  a img {
+    height: 1.5em;
+    vertical-align: -20%;
+  }
+}
+h3 {
+  text-align: right;
+  margin: 0 20px;
+  @include media-breakpoint-up(sm) {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+h4 {
+  position: relative;
+  margin: 20px;
+  @include media-breakpoint-up(sm) {
+    width: 500px;
+    margin: 20px auto 0;
+  }
+}
+span.right {
+  position: absolute;
+  right:0;
+}
+ul {
+  list-style: none;
+  position: relative;
+}
+li:before {
+  content: '🦆';
+  position: absolute;
+  left: 0;
+}

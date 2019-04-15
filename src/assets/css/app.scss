@@ -1,0 +1,150 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/reboot";
+@import "variables";
+
+
+a.clickable {
+  cursor:pointer;
+  cursor:hand;
+}
+a.no-underline:hover {
+  text-decoration:none;
+}
+* {
+  cursor: url(/assets/img/nat320.ani), url(/assets/img/nat320.png), auto !important;
+}
+body {
+  font-family: 'Kreon', serif;
+  background-position: center center;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  #{$a-tags} {
+    @include themed() {
+      color: t($link-color);
+    }
+  }
+  @include themed() {
+    color: t($text-color);
+    background-color: t($bg-color);
+    background-image: t($bg-image);
+  }
+  @include media-breakpoint-up(sm) {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .logo {
+    height: 100px;
+    @include themed() {
+      content: t($logo);
+    }
+  }
+}
+nav.white-bg {
+  background:#fff;
+}
+.twitter-tweet {
+  margin:auto;
+}
+.main-container {
+  margin-top:1rem;
+}
+.navbar {
+  border-radius: 0;
+}
+.navbar-brand {
+  padding-left:3rem;
+}
+.navbar button {
+  color:rgba(0,0,0,.8);
+}
+.card {
+  color: $gray-700;
+  .card-text a {
+    color: $gray-700;
+  }
+}
+.card-columns .card {
+  .card-text {
+    p, h1, h2, h3, h4, h5, h6, a {
+      color: $gray-700;
+    }
+  }
+  .footnote {
+    margin-bottom: 0;
+  }
+  #{$a-tags} {
+    color: $color1
+  }
+  .card-img-top {
+    width:100%;
+    height:auto;
+  }
+  display:block;
+  text-indent: 0em; /* To show paragraph starts. */
+  page-break-inside: avoid; /* For Firefox. */
+  -webkit-column-break-inside: avoid; /* For Chrome & friends. */
+  break-inside: avoid; /* For standard browsers like IE. :-) */
+  > * {
+    text-indent: 0em; /* To show paragraph starts. */
+    page-break-inside: avoid; /* For Firefox. */
+    -webkit-column-break-inside: avoid; /* For Chrome & friends. */
+    break-inside: avoid; /* For standard browsers like IE. :-) */
+  }
+}
+.blog-line {
+  margin-bottom:15px;
+}
+.card .tumblr-text {
+  .tmblr-full {
+    margin-left:-1.25rem;
+    margin-right:-1.25rem;
+    img {
+      width:100%;
+      height:auto;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .card-columns {
+    max-width: map-get($grid-breakpoints, 'sm');
+    margin: 0 auto;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .card-columns {
+    max-width: map-get($grid-breakpoints, 'lg');
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .card-columns {
+    max-width: map-get($grid-breakpoints, 'xl');
+    -webkit-column-gap: 100px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 100px; /* Firefox */
+    column-gap: 100px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+img.fake {
+  display: block;
+  margin: 20px auto;
+  height: 100px;
+  @include themed() {
+    background-color: t($bg-color);
+  }
+}

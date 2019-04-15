@@ -1,0 +1,53 @@
+[
+  {
+    "type": "tweets",
+    "slug": "something-to-remember-when-im-unsure-of-the-past",
+    "date": "Apr 9, 2019",
+    "title": "something to remember when im unsure of the past",
+    "tweets": ["1115674244476698624"]
+  },
+  {
+    "type": "soundcloud-embed",
+    "slug": "too-sad-to-speak",
+    "date": "April 7, 2019",
+    "title": "too sad to speak",
+    "text": "how can water be flowing out of a hill?",
+    "readMore": "this is the first original song i put out in the world that wasn't a joke.",
+    "url": "https://api.soundcloud.com/tracks/602465874"
+  },
+  {
+    "type": "images",
+    "slug": "fashion-accessories",
+    "date": "Sometime in April, 2019",
+    "title": "fashion accessories",
+    "images": ["/assets/img/blog-images/IMG_4442.jpg","/assets/img/blog-images/IMG_4787.jpg"]
+  },
+  {
+    "type": "tweets",
+    "slug": "jan-6-p-rail",
+    "date": "Jan 6, 2019",
+    "title": "p-rail practice",
+    "tweets": ["1082115403424456704"]
+  },
+  {
+    "type": "images",
+    "slug": "thanks-for-thinking-im-hot",
+    "date": "December 27, 2019",
+    "title": "thanks for thinking im hot",
+    "images": ["/assets/img/blog-images/DvdDx3nWoAAzNCn.jpeg","/assets/img/blog-images/DvdDx3oXgAEPBx0.jpeg"]
+  },
+  {
+    "type": "tweets",
+    "slug": "2018-video-bsides",
+    "date": "December 27, 2018",
+    "title": "2018 skating b-sides",
+    "tweets": ["1078404658853568512"]
+  },
+  {
+    "type": "tweets",
+    "slug": "2018-video",
+    "date": "December 16, 2018",
+    "title": "2018 skating video",
+    "tweets": ["1074154364628021248"]
+  }
+]

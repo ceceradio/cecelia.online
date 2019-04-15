@@ -1,6 +1,9 @@
-# SatsukitvNg4
+# cecelia.online
+[![Build Status](https://travis-ci.org/satsukitv/satsuki.tv.svg?branch=master)](https://travis-ci.org/satsukitv/satsuki.tv)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
+The very good repository for https://cecelia.online
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
 
 ## Development server
 

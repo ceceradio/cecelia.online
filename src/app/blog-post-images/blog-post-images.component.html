@@ -1,0 +1,13 @@
+<div class="grid-{{post.images.length}}">
+  <a
+  *ngFor="let imgLink of post.images; let i = index"
+  [href]="imgLink"
+  [title]="post.title"
+  >
+    <img
+    class="image-{{i}}"
+    [src]="imgLink"
+    [alt]="post.title"
+    >
+  </a>
+</div>

@@ -1,0 +1,113 @@
+$color1: #38dbfc;
+$color2: #ffc7f2;
+$color3: #89aae6;
+$color4: #1c866a;
+$color5: #061826;
+$logo: 'logo';
+$text-color: 'text-color';
+$link-color: 'link-color';
+$bg-color: 'bg-color';
+$bg-image: 'bg-image';
+$card-bg-color: 'card-bg-color';
+$card-bg-image: 'card-bg-image';
+$themes: (
+  default: (
+    logo: url(/assets/img/cecelia.png),
+    text-color: $color5,
+    link-color: $color4,
+    bg-color: $color1,
+    bg-image: url(/assets/img/site-background.png),
+    card-bg-color: $color2,
+    card-bg-image: url(/assets/img/post-bg.png)
+  ),
+  dark: (
+    logo: url(/assets/img/cecelia-dark.png),
+    text-color: #fff,
+    link-color: $color2,
+    bg-color: $color5,
+    bg-image: url(/assets/img/dark-site-background.png),
+    card-bg-color: $color3,
+    card-bg-image: url(/assets/img/post-bg.png)
+  ),
+);
+
+$a-tags: 'a:not(.btn), a:active:not(.btn), a:hover:not(.btn), a:visited:not(.btn)';
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .theme--#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function t($key) {
+  @return map-get($theme-map, $key);
+}
+
+@function pow($number, $exp) {
+  $value: 1;
+  @if $exp > 0 {
+    @for $i from 1 through $exp {
+      $value: $value * $number;
+    }
+  } @else if $exp < 0 {
+    @for $i from 1 through -$exp {
+      $value: $value / $number;
+    }
+  }
+  @return $value;
+}
+
+@function fact($number) {
+  $value: 1;
+  @if $number > 0 {
+    @for $i from 1 through $number {
+      $value: $value * $i;
+    }
+  }
+  @return $value;
+}
+
+@function pi() {
+  @return 3.14159265359;
+}
+
+@function rad($angle) {
+  $unit: unit($angle);
+  $unitless: $angle / ($angle * 0 + 1);
+  // If the angle has 'deg' as unit, convert to radians.
+  @if $unit == deg {
+    $unitless: $unitless / 180 * pi();
+  }
+  @return $unitless;
+}
+
+@function sin($angle) {
+  $sin: 0;
+  $angle: rad($angle);
+  // Iterate a bunch of times.
+  @for $i from 0 through 10 {
+    $sin: $sin + pow(-1, $i) * pow($angle, (2 * $i + 1)) / fact(2 * $i + 1);
+  }
+  @return $sin;
+}
+
+@function cos($angle) {
+  $cos: 0;
+  $angle: rad($angle);
+  // Iterate a bunch of times.
+  @for $i from 0 through 10 {
+    $cos: $cos + pow(-1, $i) * pow($angle, 2 * $i) / fact(2 * $i);
+  }
+  @return $cos;
+}
+
+@function tan($angle) {
+  @return sin($angle) / cos($angle);
+}

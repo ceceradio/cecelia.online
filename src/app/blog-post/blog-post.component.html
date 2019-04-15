@@ -1,0 +1,21 @@
+<h2 *ngIf="post.title">{{post.title}}</h2>
+<p *ngIf="post.text">{{post.text}}</p>
+<ng-container #container></ng-container>
+<ng-container *ngIf="post.readMore">
+  <p *ngIf="readMore; then thenBlock else elseBlock"></p>
+  <ng-template #thenBlock><small>{{post.readMore}}</small></ng-template>
+  <ng-template #elseBlock><small><a routerLink="/blog/{{post.slug}}">Read More...</a></small></ng-template>
+</ng-container>
+<p class="date-line" *ngIf="post.date"><small>Posted on <a routerLink="/blog/{{post.slug}}">{{post.date}}</a></small></p>
+<div class="heart-container" *ngIf="post.slug">
+  <input
+  name="{{post.slug}}-heart"
+  id="{{post.slug}}-heart"
+  class="toggle-heart"
+  type="checkbox"
+  [(ngModel)]="liked"
+  [ngModelOptions]="{standalone: true}"
+  (ngModelChange)="postLikeToggle()"
+  />
+  <label for="{{post.slug}}-heart" class="toggle-heart">💙</label>
+</div>

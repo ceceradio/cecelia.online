@@ -1,0 +1,9 @@
+img {
+  width: 100%;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 6px;
+  gap: 6px;
+}

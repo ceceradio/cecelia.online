@@ -1,0 +1,11 @@
+<div class="card-columns">
+  <div class="card" *ngFor="let project of projects">
+    <a [hidden]="!project.image" target="_blank" [href]="getUrl(project)"><img class="card-img-top" [src]="getImage(project.image)" alt="Picture for {{project.name}}"></a>
+    <div class="card-block">
+      <a target="_blank" [href]="getUrl(project)"><h4 class="card-title">{{project.name}}</h4></a>
+      <p class="card-text">{{project.description}}</p>
+      <p class="card-text footnote" target="_blank" [hidden]="!project.url"><small class="text-muted">URL: <a [href]="project.url">{{getUrlLabel(project)}}</a></small></p>
+      <p class="card-text footnote" target="_blank" [hidden]="!project.repository"><small class="text-muted">Source: <a [href]="project.repository">{{getRepositoryLabel(project.repository)}}</a></small></p>
+    </div>
+  </div>
+</div>
