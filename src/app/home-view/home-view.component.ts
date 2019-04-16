@@ -11,7 +11,12 @@ export class HomeViewComponent implements OnInit {
   blogData: any;
 
   ngOnInit() {
-    this.blogData = blogData;
+    this.blogData = this.splitBlogData();
   }
-
+  splitBlogData() {
+    let data = blogData.map((value, i) => Object.assign({}, value, {index: i}));
+    let even = data.filter((value, i) => i % 2 == 0);
+    let odd = data.filter((value, i) => i % 2 == 1);
+    return even.concat(odd);
+  }
 }
