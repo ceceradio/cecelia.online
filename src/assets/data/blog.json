@@ -1,6 +1,34 @@
 [
   {
     "type": "tweets",
+    "slug": "boa-duvet-cover-clip",
+    "date": "May 23, 2019",
+    "title": "bôa - duvet (COVER)",
+    "tweets": ["1131270642093965314"]
+  },
+  {
+    "type": "tweets",
+    "slug": "why-i-like-things",
+    "date": "May 21, 2019",
+    "title": "why i like things...",
+    "tweets": ["1130691834144014337"]
+  },
+  {
+    "type": "tweets",
+    "slug": "ufo-melodica-x-files",
+    "date": "May 14, 2019",
+    "title": "x-files theme song (original, full length)",
+    "tweets": ["1128453737922605056"]
+  },
+  {
+    "type": "tweets",
+    "slug": "higher-order-components-in-angular-7",
+    "date": "May 14, 2019",
+    "title": "higher order components in angular 7",
+    "tweets": ["1117883379666415616"]
+  },
+  {
+    "type": "tweets",
     "slug": "something-to-remember-when-im-unsure-of-the-past",
     "date": "Apr 9, 2019",
     "title": "something to remember when im unsure of the past",
