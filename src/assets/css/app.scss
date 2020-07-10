@@ -118,6 +118,7 @@ nav.white-bg {
     max-width: map-get($grid-breakpoints, 'sm');
     margin: 0 auto;
   }
+  /*
   @include media-breakpoint-up(lg) {
     display: block;
     max-width: map-get($grid-breakpoints, 'lg');
@@ -127,13 +128,14 @@ nav.white-bg {
   }
   @include media-breakpoint-up(xl) {
     max-width: map-get($grid-breakpoints, 'xl');
-    -webkit-column-gap: 100px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 100px; /* Firefox */
+    -webkit-column-gap: 100px;
+    -moz-column-gap: 100px;
     column-gap: 100px;
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
   }
+  */
 }
 img.fake {
   display: block;

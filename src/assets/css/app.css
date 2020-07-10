@@ -13,7 +13,6 @@ html {
 
 @-ms-viewport {
   width: device-width; }
-
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
@@ -368,29 +367,29 @@ nav.white-bg {
 
 .card-columns {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  /*
+  @include media-breakpoint-up(lg) {
+    display: block;
+    max-width: map-get($grid-breakpoints, 'lg');
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: map-get($grid-breakpoints, 'xl');
+    -webkit-column-gap: 100px;
+    -moz-column-gap: 100px;
+    column-gap: 100px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  */ }
   @media (min-width: 576px) {
     .card-columns {
       max-width: 576px;
       margin: 0 auto; } }
-  @media (min-width: 992px) {
-    .card-columns {
-      display: block;
-      max-width: 992px;
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2; } }
-  @media (min-width: 1200px) {
-    .card-columns {
-      max-width: 1200px;
-      -webkit-column-gap: 100px;
-      /* Chrome, Safari, Opera */
-      -moz-column-gap: 100px;
-      /* Firefox */
-      column-gap: 100px;
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2; } }
 
 img.fake {
   display: block;

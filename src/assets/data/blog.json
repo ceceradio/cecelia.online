@@ -1,6 +1,48 @@
 [
   {
     "type": "tweets",
+    "slug": "to-my-future-employer",
+    "date": "July 9, 2020",
+    "title": "to my future employer...",
+    "tweets": ["1281354495709061120"]
+  },
+  {
+    "type": "tweets",
+    "slug": "doom-fan",
+    "date": "July 9, 2020",
+    "title": "doom fan",
+    "tweets": ["1281360730441371649"]
+  },
+  {
+    "type": "tweets",
+    "slug": "grunt2",
+    "date": "July 8, 2020",
+    "title": "grunt 2",
+    "tweets": ["1281024005772906497"]
+  },
+  {
+    "type": "tweets",
+    "slug": "yall-ever-have-a-leg",
+    "date": "July 6, 2020",
+    "title": "",
+    "tweets": ["1279992659025833986"]
+  },
+  {
+    "type": "tweets",
+    "slug": "us-vs-them",
+    "date": "July 5, 2020",
+    "title": "us vs them demo",
+    "tweets": ["1279859659264925697"]
+  },
+  {
+    "type": "tweets",
+    "slug": "double-whiplash-cece",
+    "date": "July 5, 2020",
+    "title": "thats what they call me!",
+    "tweets": ["1277689457911771138"]
+  },
+  {
+    "type": "tweets",
     "slug": "boa-duvet-cover-clip",
     "date": "May 23, 2019",
     "title": "bôa - duvet (COVER)",
